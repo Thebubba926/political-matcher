@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to Political Matcher!</h1>
+    <p>Today is {{today}}</p>
+    <a href="{% url 'surveys.list' %}" class="btn btn-primary">Check out these surveys!</a>
+{% endblock %}

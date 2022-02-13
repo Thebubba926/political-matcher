@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="border round">
+    <h1 class="my-5">{{survey.title}}</h1>
+    <p>{{survey.text}}</p>
+</div>
+
+<a href="{% url 'surveys.list' %}" class="btn btn-secondary my-5">Back</a>
+<a href="{% url 'surveys.update' pk=surveys.id %}" class="btn btn-secondary">Edit</a>
+<a href="{% url 'surveys.delete' pk=surveys.id %}" class="btn btn-danger">Delete</a>
+{% endblock %}
