@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_ld3+jqx@(ng#de!esw7u2_=645&*$zn29pi2ti_4$evh=^f_j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://political-matcher.herokuapp.com/',
 'http://political-matcher.herokuapp.com/',
