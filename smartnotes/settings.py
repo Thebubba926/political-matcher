@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['https://political-matcher.herokuapp.com/',
 'http://political-matcher.herokuapp.com/',
 'political-matcher.herokuapp.com/',
-'political-matcher.herokuapp.com/']
+'political-matcher.herokuapp.com']
 
 
 # Application definition
