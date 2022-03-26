@@ -1,4 +1,3 @@
-import pytz
 from datetime import datetime
 from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
@@ -26,7 +25,7 @@ class LoginInterfaceView(LoginView):
 
 class HomeView(TemplateView):
     template_name = 'home/welcome.html' 
-    extra_context = {'today': pytz.utc.localize(datetime.today())}
+    extra_context = {'today': datetime.today()}
 
 class AuthorizedView(LoginRequiredMixin, TemplateView):
     template_name = 'home/authorized.html'
