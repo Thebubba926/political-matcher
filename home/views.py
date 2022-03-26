@@ -25,8 +25,7 @@ class LoginInterfaceView(LoginView):
     template_name = 'home/login.html'
 
 class HomeView(TemplateView):
-    template_name = 'home/welcome.html' 
-    extra_context = {'today': pytz.utc.localize(datetime.today())}
+    template_name = 'home/welcome.html'
 
 class AuthorizedView(LoginRequiredMixin, TemplateView):
     template_name = 'home/authorized.html'
