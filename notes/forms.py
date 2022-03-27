@@ -22,8 +22,8 @@ class NotesForm(forms.ModelForm, forms.Form):
         }
         labels = {
             'text': 'Write your thoughts here:',
-            'guns': 'Do you support gun control'
+            'guns': 'Do you support gun control',
+            'knives': 'Do you support knife control'
         }
-
 
 
