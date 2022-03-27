@@ -28,7 +28,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['https://political-matcher.herokuapp.com/',
 'http://political-matcher.herokuapp.com/',
 'political-matcher.herokuapp.com/',
-'political-matcher.herokuapp.com']
+'political-matcher.herokuapp.com', 'http://localhost:8000/', 'localhost', 'localhost:8000']
 
 
 # Application definition
@@ -133,4 +133,4 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-LOGIN_REDIRECT_URL = '/smart/notes'
+LOGIN_REDIRECT_URL = '/pmatch/notes'

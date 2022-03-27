@@ -9,19 +9,19 @@ from .models import Notes
 
 class NotesDeleteView(LoginRequiredMixin, DeleteView):
     model = Notes
-    success_url = '/smart/notes'
+    success_url = '/pmatch/notes'
     template_name = 'notes/notes_delete.html'
     login_url = "/login"
 
 class NotesUpdateView(LoginRequiredMixin, UpdateView):
     model = Notes
-    success_url = '/smart/notes'
+    success_url = '/pmatch/notes'
     form_class = NotesForm
     login_url = "/login"
 
 class NotesCreateView(LoginRequiredMixin, CreateView):
     model = Notes
-    success_url = '/smart/notes'
+    success_url = '/pmatch/notes'
     form_class = NotesForm
     login_url = "/login"
 
